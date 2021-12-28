@@ -1,0 +1,80 @@
+@import './variable';
+
+
+// Google Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Oleo+Script:wght@400;700&display=swap');
+
+/*====================
+Reset CSS
+======================*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline:none;
+  vertical-align: middle;
+}
+
+body {
+  font-family: $primaryFontFamily;
+  font-size: $primaryFontSize;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $blackColor;
+  transition: all 0.3s linear;
+}
+
+
+/*====================
+Common CSS
+======================*/
+
+.container {
+  max-width: 73.125rem;  //1170px
+  margin: 0 auto;
+}
+
+
+
+/*====================
+Margin & Padding
+======================*/
+
+@for $i from 1 through 2 {
+  .pt-#{$i * 50} {
+    padding-top: $i * 50px;
+  }
+
+  .pb-#{$i * 50} {
+    padding-bottom: $i * 50px;
+  }
+}
+
+
+/*====================
+Alignment
+======================*/
+
+$list: left, right, center, justify;
+
+@each $i in $list {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
