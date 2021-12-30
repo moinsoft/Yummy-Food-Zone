@@ -29,7 +29,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #333333;
   transition: all 0.3s linear;
 }
 
@@ -82,5 +82,33 @@ Alignment
 /*====================
 Header Section
 ======================*/
+.header {
+  padding: 20px 0;
+}
+.header__content {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  column-gap: 50px;
+  align-items: center;
+}
+.header__logo {
+  width: 200px;
+  height: auto;
+}
+.header__navlist {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-content: end;
+  column-gap: 20px;
+}
+.header__navlink {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #333333;
+}
+.header__navlink:hover {
+  color: #FF5E18;
+}
 
 /*# sourceMappingURL=style.css.map */

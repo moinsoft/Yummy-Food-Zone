@@ -5,5 +5,42 @@ Header Section
 ======================*/
 
 
+.header{
+  padding: 20px 0;
 
+  &__content{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    column-gap: 50px;
+    align-items: center;
+  }
+
+
+  &__logo{
+    width: 200px;
+    height: auto;
+  }
+
+
+  &__navlist{
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    justify-content: end;
+    column-gap: 20px;
+  }
+
+
+  &__navlink{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $blackColor;
+
+    &:hover{
+      color: $primaryColor;
+    }
+  }
+
+
+}
 
