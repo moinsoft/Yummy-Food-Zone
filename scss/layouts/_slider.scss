@@ -1,0 +1,41 @@
+@import '../base/variable';
+
+/*====================
+Slider Section
+======================*/
+
+.slider{
+
+
+  &__banner{
+    height: 100vh;
+  }
+
+  &__content{
+    height: 100vh;
+    color: $whiteColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle{
+    font-size: 30px;
+    font-family: $secondaryFontFamily;
+  }
+
+  &__title{
+    font-size: 60px;
+    margin: 50px 0;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+
+  .btn{
+    margin: 50px 20px 0 20px;
+  }
+
+
+}

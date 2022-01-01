@@ -52,6 +52,68 @@ Common CSS
 
 
 
+// Background CSS
+
+.bg{
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+
+  &::before{
+    content: "";
+    position: absolute;
+    background-color: $grayColor;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    z-index: -1;
+  }
+}
+
+
+/*====================
+Common Button CSS
+======================*/
+.btn{
+  display: inline-block;
+  color: $whiteColor;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 10px 20px;
+  
+  &.btn-box{
+    background-color: $primaryColor;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: -100%;
+      top: 0;
+      background-color: $secondaryColor;
+      z-index: -1;
+      transition: all 0.3s linear;
+    }
+
+    &:hover{
+      &::before{
+        left: 0;
+      }
+    }
+  }
+
+}
+
+
+
+
 /*====================
 Margin & Padding
 ======================*/
