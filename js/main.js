@@ -12,6 +12,13 @@ $(document).ready(function () {
   });
 
 
+  // Smooth Scroll And Current Class Active
+
+  $('#nav').onePageNav({
+    currentClass: 'current'
+  });
+
+
 
 });
 

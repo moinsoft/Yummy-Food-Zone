@@ -351,6 +351,9 @@ Header Section
   justify-content: end;
   column-gap: 20px;
 }
+.header__navitem.current .header__navlink {
+  color: #FF5E18;
+}
 .header__navlink {
   display: inline-block;
   text-transform: uppercase;
