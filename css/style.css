@@ -528,6 +528,9 @@ Food-Menu Section
 /*====================
 CTA Top Section
 ======================*/
+.top-cat {
+  background-attachment: fixed;
+}
 .top-cat .section-title {
   color: #ffffff;
   margin-bottom: 0;
@@ -579,5 +582,45 @@ Services Section
 /*====================
 Team Section
 ======================*/
+.team {
+  background-color: #f2f2f2;
+}
+.team__box {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  column-gap: 30px;
+}
+.team__single {
+  position: relative;
+  overflow: hidden;
+}
+.team__single:hover .team__content {
+  bottom: 0;
+}
+.team__img {
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  padding: 3px;
+}
+.team__content {
+  background-color: #555555;
+  color: #ffffff;
+  position: absolute;
+  bottom: -25%;
+  width: 100%;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+.team__title {
+  text-transform: capitalize;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.team__designation {
+  text-transform: capitalize;
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=style.css.map */

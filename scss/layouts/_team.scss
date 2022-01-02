@@ -4,3 +4,58 @@
 Team Section
 ======================*/
 
+.team{
+  background-color: $bgColorPrimary;
+
+  &__box{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    column-gap: 30px;
+  }
+
+  &__single{
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+      .team__content{
+        bottom: 0;
+      }
+  
+    }
+
+  }
+
+  &__img{
+    width: 100%;
+    background-color: $whiteColor;
+    border: 2px solid $lightGrayColor;
+    padding: 3px;
+  }
+
+
+  &__content{
+    background-color: $grayColor;
+    color: $whiteColor;
+    position: absolute;
+    bottom: -25%;
+    width: 100%;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+  }
+
+
+  &__title{
+    text-transform: capitalize;
+    font-size: $secondaryTitleFontSize;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+
+  &__designation{
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+}
