@@ -95,7 +95,6 @@ Common Button CSS
 Common Section Title
 ======================*/
 .section-title {
-  max-width: 700px;
   margin: 0 auto 60px;
 }
 .section-title__subtitle {
@@ -140,6 +139,22 @@ Common Section Title
 .section-title__title--special::after {
   background-color: #555555;
   z-index: 1;
+}
+.section-title__title--cta {
+  text-transform: capitalize;
+  font-size: 3.125rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+.section-title__title--cta::before {
+  display: none;
+}
+.section-title__title--cta::after {
+  display: none;
+}
+.section-title__title--cta span {
+  font-weight: 800;
+  color: #FF5E18;
 }
 
 /*====================
@@ -383,11 +398,11 @@ Slider Section
   align-items: center;
 }
 .slider__subtitle {
-  font-size: 30px;
+  font-size: 2rem;
   font-family: "Oleo Script", cursive;
 }
 .slider__title {
-  font-size: 60px;
+  font-size: 3.125rem;
   margin: 50px 0;
   text-transform: capitalize;
   font-weight: 600;
@@ -513,5 +528,9 @@ Food-Menu Section
 /*====================
 CTA Top Section
 ======================*/
+.top-cat .section-title {
+  color: #ffffff;
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

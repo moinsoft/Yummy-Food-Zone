@@ -118,7 +118,6 @@ Common Section Title
 ======================*/
 
 .section-title{
-  max-width: 700px;
   margin:0 auto 60px;
   
   &__subtitle{
@@ -167,6 +166,25 @@ Common Section Title
       &::after{
         background-color: $grayColor;
         z-index: 1;
+      }
+    }
+
+    &--cta{
+      text-transform: capitalize;
+      font-size: $heroHeading;
+      color: $whiteColor;
+      font-weight: 400;
+      
+      &::before{
+        display: none;
+      }
+      &::after{
+        display: none;
+      }
+
+      span{
+        font-weight: 800;
+        color: $primaryColor;
       }
     }
 
