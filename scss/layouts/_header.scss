@@ -11,6 +11,12 @@ Header Section
   z-index: 999;
   left: 0;
   right: 0;
+  transition: all 0.3s linear;
+
+  &.sticky{
+    background-color: $blackColor;
+    padding: 5px 0;
+  }
 
   &__content{
     display: grid;
