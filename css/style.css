@@ -137,6 +137,10 @@ Common Section Title
   transform: translateX(-50%);
   z-index: -1;
 }
+.section-title__title--special::after {
+  background-color: #555555;
+  z-index: 1;
+}
 
 /*====================
 Margin & Padding
@@ -467,5 +471,43 @@ About Section
 /*====================
 Food-Menu Section
 ======================*/
+.food-menu {
+  background-color: #f2f2f2;
+}
+.food-menu__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.food-menu__single {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 30px;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #dddddd;
+}
+.food-menu__single:hover .food-menu__img {
+  border-radius: 50%;
+}
+.food-menu__img {
+  border: 1px solid #dddddd;
+  padding: 3px;
+  transition: all 0.3s linear;
+}
+.food-menu__title {
+  font-size: 22px;
+  color: #FF5E18;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-bottom: 2px dashed #dddddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.food-menu__price {
+  float: right;
+  font-style: italic;
+}
 
 /*# sourceMappingURL=style.css.map */

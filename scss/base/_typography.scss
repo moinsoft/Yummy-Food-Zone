@@ -162,7 +162,19 @@ Common Section Title
       transform: translateX(-50%);
       z-index: -1;
     }
+
+    &--special{
+      &::after{
+        background-color: $grayColor;
+        z-index: 1;
+      }
+    }
+
+    
   }
+
+
+  
 }
 
 
