@@ -16,6 +16,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 24px;
+  color: #333333;
 }
 
 img {
@@ -91,14 +92,205 @@ Common Button CSS
 }
 
 /*====================
+Common Section Title
+======================*/
+.section-title {
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+.section-title__subtitle {
+  font-family: "Oleo Script", cursive;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.section-title__title {
+  font-size: 2rem;
+  color: #FF5E18;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0px;
+  padding: 15px 0;
+  position: relative;
+}
+.section-title__title::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: #FF5E18;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.section-title__title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #dddddd;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/*====================
 Margin & Padding
 ======================*/
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
 .pt-50 {
   padding-top: 50px;
 }
 
 .pb-50 {
   padding-bottom: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .pt-100 {
@@ -252,5 +444,16 @@ Slider Section
 /*====================
 About Section
 ======================*/
+.about__box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 30px;
+}
+.about__copy {
+  margin-bottom: 30px;
+}
+.about__img {
+  max-width: 500px;
+}
 
 /*# sourceMappingURL=style.css.map */

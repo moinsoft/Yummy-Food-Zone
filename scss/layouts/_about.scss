@@ -4,3 +4,21 @@
 About Section
 ======================*/
 
+.about{
+  
+
+  &__box{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+  }
+
+  &__copy{
+    margin-bottom: 30px;
+  }
+
+  &__img{
+    max-width: 500px;
+  }
+
+}
