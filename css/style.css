@@ -191,6 +191,63 @@ Slider Section
 .slider .btn {
   margin: 50px 20px 0 20px;
 }
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+  font-size: 1rem;
+  color: #dddddd;
+  background: transparent;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.slider .slick-arrow.slick-prev {
+  left: 100px;
+}
+.slider .slick-arrow.slick-next {
+  right: 100px;
+}
+.slider .slick-arrow:hover {
+  background: #FE2B00;
+  border: 1px solid #FE2B00;
+  color: #ffffff;
+}
+.slider .slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+.slider .slick-dots li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.slider .slick-dots li button {
+  border: 1px solid #dddddd;
+  font-size: 10px;
+  color: #dddddd;
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.slider .slick-dots li button:hover {
+  background: #FE2B00;
+  border: 1px solid #FE2B00;
+  color: #ffffff;
+}
+.slider .slick-dots li.slick-active button {
+  background: #FE2B00;
+  border: 1px solid #FE2B00;
+  color: #ffffff;
+}
 
 /*====================
 About Section
