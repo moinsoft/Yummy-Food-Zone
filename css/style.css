@@ -626,6 +626,10 @@ Team Section
 /*====================
 Testimonials Section
 ======================*/
+.testimonials {
+  padding-bottom: 150px;
+  background-attachment: fixed;
+}
 .testimonials .section-title {
   color: #ffffff;
 }
@@ -688,5 +692,62 @@ Testimonials Section
 /*====================
 Special Menu Section
 ======================*/
+.special-menu__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.special-menu__single {
+  position: relative;
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+}
+.special-menu__single:hover .special-menu__img {
+  transform: scale(1.1);
+}
+.special-menu__media-object {
+  overflow: hidden;
+}
+.special-menu__img {
+  width: 100%;
+  transition: all 0.3s linear;
+}
+.special-menu__badge {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  border: 2px dashed #FF5E18;
+  padding: 2px;
+}
+.special-menu__copy {
+  color: #ffffff;
+  font-size: 1.375rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #FF5E18;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.special-menu__content {
+  padding: 20px;
+}
+.special-menu__item {
+  font-size: 1.125rem;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.special-menu__item:last-child {
+  border-top: 2px dashed #dddddd;
+  padding-top: 5px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.special-menu__price {
+  float: right;
+  color: #FF5E18;
+  font-style: italic;
+}
 
 /*# sourceMappingURL=style.css.map */

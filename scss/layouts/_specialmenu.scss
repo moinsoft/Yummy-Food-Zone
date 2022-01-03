@@ -5,3 +5,83 @@ Special Menu Section
 ======================*/
 
 
+.special-menu{
+
+
+  &__box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+  }
+
+
+  &__single{
+    position: relative;
+    background-color: $bgColorPrimary;
+    border: 1px solid $lightGrayColor;
+
+    &:hover{
+      .special-menu__img{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+
+  &__media-object{
+    overflow: hidden;
+  }
+
+
+  &__img{
+    width: 100%;
+    transition: all 0.3s linear;
+  }
+
+  &__badge{
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    border: 2px dashed $primaryColor;
+    padding: 2px;
+  }
+
+  &__copy{
+    color: $whiteColor;
+    font-size: $secondaryTitleFontSize;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: $primaryColor;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+
+
+  &__content{
+    padding: 20px;
+  }
+
+
+  &__item{
+    font-size: $secondaryFontSize;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+    &:last-child{
+      border-top: 2px dashed $lightGrayColor;
+      padding-top: 5px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+  }
+
+
+  &__price{
+    float: right;
+    color: $primaryColor;
+    font-style: italic;
+  }
+}
