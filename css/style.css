@@ -626,5 +626,63 @@ Team Section
 /*====================
 Testimonials Section
 ======================*/
+.testimonials .section-title {
+  color: #ffffff;
+}
+.testimonials .section-title__title {
+  color: #ffffff;
+}
+.testimonials__single {
+  color: #dddddd;
+  margin: 0 20px;
+}
+.testimonials__author {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dashed #dddddd;
+  padding: 3px;
+  margin: 0 auto;
+}
+.testimonials__copy {
+  margin: 50px 0;
+  color: #ffffff;
+}
+.testimonials__title {
+  text-transform: capitalize;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.testimonials__designation {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.testimonials .slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -70px;
+}
+.testimonials .slick-dots li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.testimonials .slick-dots li button {
+  text-indent: -9999px;
+  background-color: #dddddd;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.testimonials .slick-dots li button:hover {
+  background: #FE2B00;
+}
+.testimonials .slick-dots li.slick-active button {
+  background: #FE2B00;
+}
 
 /*# sourceMappingURL=style.css.map */

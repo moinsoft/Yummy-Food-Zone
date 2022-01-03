@@ -6,9 +6,21 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed:3000,
     dots: true,
-    pauseOnDotsHover:true,
+    pauseOnDotsHover: true,
     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+  });
+
+
+  // Slick Slider Active In Testimonials
+
+  $('.testimonials__box').slick({
+    autoplay: true,
+    autoplaySpeed:3000,
+    dots: true,
+    pauseOnDotsHover: true,
+    slidesToShow: 2,
+    arrows: false,
   });
 
 

@@ -4,3 +4,86 @@
 Testimonials Section
 ======================*/
 
+.testimonials{
+
+  .section-title{
+    color: $whiteColor;
+
+    &__title{
+      color: $whiteColor;
+    }
+  }
+
+
+  &__single{
+    color: $lightGrayColor;
+    margin: 0 20px;
+  }
+
+
+  &__author{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px dashed $lightGrayColor;
+    padding: 3px;
+    margin: 0 auto;
+  }
+
+
+  &__copy{
+    margin: 50px 0;
+    color: $whiteColor;
+  }
+
+
+  &__title{
+    text-transform: capitalize;
+    font-size: $secondaryTitleFontSize;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+
+  &__designation{
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  
+  .slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50%);
+    bottom: -70px;
+
+    li{
+      display: inline-block;
+      margin: 0 15px;
+
+      button{
+        text-indent: -9999px;
+        background-color: $lightGrayColor;
+        border: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover{
+          background: $secondaryColor;
+        }
+
+      }
+
+      &.slick-active{
+        button{
+          background: $secondaryColor;
+        }
+      }
+
+    }
+  }
+
+
+}
