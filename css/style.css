@@ -855,5 +855,31 @@ Blog Section
 /*====================
 Gallery Section
 ======================*/
+.gallery {
+  background-color: #f2f2f2;
+}
+.gallery__box {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+  gap: 30px;
+}
+.gallery__single {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 3px;
+  transition: all 0.3s linear;
+}
+.gallery__single:hover {
+  border: 1px solid #FF5E18;
+}
+.gallery__single:hover .gallery__img {
+  transform: scale(1.1);
+}
+.gallery__media-object {
+  overflow: hidden;
+}
+.gallery__img {
+  transition: all 0.3s linear;
+}
 
 /*# sourceMappingURL=style.css.map */

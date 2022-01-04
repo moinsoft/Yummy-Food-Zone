@@ -5,3 +5,41 @@ Gallery Section
 ======================*/
 
 
+.gallery{
+  background-color: $bgColorPrimary;
+
+  &__box{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    gap: 30px;
+  }
+
+
+  &__single{
+    background-color: $whiteColor;
+    border: 1px solid $lightGrayColor;
+    padding: 3px;
+    transition: all 0.3s linear;
+    
+    &:hover{
+      border: 1px solid $primaryColor;
+
+      .gallery__img{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+
+  &__media-object{
+    overflow: hidden;
+  }
+
+
+  &__img{
+    transition: all 0.3s linear;
+  }
+
+}
+
+
