@@ -24,6 +24,13 @@ Special Menu Section
       .special-menu__img{
         transform: scale(1.1);
       }
+
+      .special-menu__badge{
+        border: 2px dashed $secondaryColor;
+      }
+      .special-menu__copy{
+        background-color: $secondaryColor;
+      }
     }
   }
 
@@ -46,6 +53,7 @@ Special Menu Section
     border-radius: 50px;
     border: 2px dashed $primaryColor;
     padding: 2px;
+    transition: all 0.3s linear;
   }
 
   &__copy{
@@ -56,6 +64,7 @@ Special Menu Section
     background-color: $primaryColor;
     padding: 10px 20px;
     border-radius: 50px;
+    transition: all 0.3s linear;
   }
 
 
