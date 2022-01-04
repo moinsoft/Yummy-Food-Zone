@@ -19,8 +19,12 @@ Special Menu Section
     position: relative;
     background-color: $bgColorPrimary;
     border: 1px solid $lightGrayColor;
+    transition: all 0.3s linear;
 
+    
     &:hover{
+      box-shadow: 0 0 10px 2px $lightGrayColor;
+
       .special-menu__img{
         transform: scale(1.1);
       }
