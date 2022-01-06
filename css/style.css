@@ -158,6 +158,36 @@ Common Section Title
 }
 
 /*====================
+Common Page Banner
+======================*/
+.page-banner {
+  padding: 200px 0 50px;
+}
+.page-banner__title {
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.breadcrumb {
+  margin-top: 20px;
+}
+.breadcrumb__list {
+  display: flex;
+}
+.breadcrumb__item {
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.breadcrumb__link {
+  color: #ffffff;
+}
+.breadcrumb__link:hover {
+  color: #FF5E18;
+}
+
+/*====================
 Margin & Padding
 ======================*/
 .mt-10 {
@@ -476,11 +506,17 @@ About Section
   grid-template-columns: 2fr 1fr;
   column-gap: 30px;
 }
+.about__box--page {
+  grid-template-columns: 1fr 2fr;
+}
 .about__copy {
   margin-bottom: 30px;
 }
 .about__img {
   max-width: 500px;
+}
+.about__img--page {
+  border: 1px solid #dddddd;
 }
 
 /*====================

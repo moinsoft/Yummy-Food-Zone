@@ -195,6 +195,49 @@ Common Section Title
   
 }
 
+/*====================
+Common Page Banner
+======================*/
+
+.page-banner{
+  padding: 200px 0 50px;
+
+
+  &__title{
+    text-transform: capitalize;
+    color: $whiteColor;
+    font-size: $titleFontSize;
+  }
+
+}
+
+.breadcrumb{
+  margin-top: 20px;
+  
+
+  &__list{
+    display: flex;
+  }
+
+
+  &__item{
+    text-transform: capitalize;
+    color: $whiteColor;
+    margin-right: 10px;
+  }
+
+
+  &__link{
+    color: $whiteColor;
+
+    &:hover{
+      color: $primaryColor;
+    }
+  }
+
+
+}
+
 
 
 
