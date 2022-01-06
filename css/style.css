@@ -972,6 +972,16 @@ Contact Section
 .contact__input::placeholder {
   text-transform: capitalize;
 }
+.contact__map {
+  width: 100%;
+  border: 0;
+  height: 600px;
+  border: 3px dashed #dddddd;
+  padding: 3px;
+}
+.contact__map:hover {
+  border-color: #FF5E18;
+}
 
 /*====================
 Footer Section

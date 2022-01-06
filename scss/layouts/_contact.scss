@@ -39,4 +39,16 @@ Contact Section
     }
   }
 
+  &__map{
+    width: 100%;
+    border: 0;
+    height: 600px;
+    border: 3px dashed $lightGrayColor;
+    padding: 3px;
+
+    &:hover{
+      border-color: $primaryColor;
+    }
+  }
+
 }
