@@ -911,6 +911,31 @@ Gallery Section
 .gallery__single:hover .gallery__img {
   transform: scale(1.1);
 }
+.gallery__single--page {
+  position: relative;
+  overflow: hidden;
+}
+.gallery__single--page::before, .gallery__single--page::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  background-color: #333333;
+  z-index: 2;
+  opacity: 0.8;
+  transition: all 0.3s linear;
+}
+.gallery__single--page::before {
+  left: 0;
+}
+.gallery__single--page::after {
+  right: 0;
+}
+.gallery__single--page:hover::before, .gallery__single--page:hover::after {
+  width: 50%;
+  cursor: crosshair;
+}
 .gallery__media-object {
   overflow: hidden;
 }

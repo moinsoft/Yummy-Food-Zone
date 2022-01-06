@@ -28,6 +28,41 @@ Gallery Section
         transform: scale(1.1);
       }
     }
+
+
+    &--page{
+      position: relative;
+      overflow: hidden;
+
+      &::before,&::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        background-color: $blackColor;
+        z-index: 2;
+        opacity: .8;
+        transition: all 0.3s linear;
+      }
+
+      &::before{
+        left: 0;
+      }
+
+      &::after{
+        right: 0;
+      }
+
+      &:hover{
+        &::before,&::after{
+          width: 50%;
+          cursor: crosshair;
+        }
+      }
+
+    }
+
   }
 
 
